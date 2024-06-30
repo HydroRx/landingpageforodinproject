@@ -1,0 +1,207 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Example font */
+}
+
+/* Container for limiting width */
+.widthset {
+    width: 70%; /* 70% width of the viewport */
+    max-width: 1200px; /* Limit maximum width for larger screens */
+    margin: 0 auto; /* Center align the container */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #1F2937;
+    width: 100%; /* Full width */
+}
+
+.navflexbox {
+    display: flex;
+    
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 14px;
+}
+
+.navtitle {
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ulflexboxrow {
+    display: flex;
+    color: #F9FAF8;
+    list-style-type: none;
+    gap: 8px;
+}
+
+/* Hero section styles */
+.hero {
+    width: 100%;
+    background-color: #1F2937;
+    padding: 50px 0; /* Example padding */
+}
+
+.herocontent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 24px;
+    align-items: center;
+}
+
+.heroleftside {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+}
+
+.herotitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    max-width: 100%; /* Allow title to grow up to full width */
+}
+
+.heropara {
+    font-size: 18px;
+    color: #E5E7EB;
+    max-width: 100%; /* Allow paragraph to grow up to full width */
+}
+
+.herobutton {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px; 
+    border-radius: 15px;
+    border-style: double;
+}
+
+.heroimg {
+    width: 100%; /* Make image responsive */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline-block gaps */
+}
+
+.cardscontent {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    padding: 8px 16px;
+    
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 14px;
+    color: #1F2937;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.cards p {
+    width: 20ch;
+    font-weight: bold;
+    color: #1F2937;
+    margin-left: 12px;
+    
+}
+
+.emptycontainer {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    border:2px solid #3882F6 ;
+    margin-bottom: 12px;
+    background-color: #a1a1a1;
+    
+}
+
+.informationsection
+{
+    background-color: #E5E7EB;
+}
+
+.informationcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding:96px;
+}
+.italic {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: lighter;
+    
+}
+
+.quoteright {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #1F2937;
+    opacity: 88%;
+}
+
+@media (max-width: 700px) {
+    .herocontent {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+    }
+
+    .navtitle {
+        font-size: 12px;
+    }
+
+    ul {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cardscontainer {
+        justify-content: center;
+    }
+
+    .italic {
+        font-size: 16px;
+    }
+    .quoteright {
+        font-size: 12px;
+    }
+}
