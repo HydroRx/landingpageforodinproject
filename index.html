@@ -36,11 +36,23 @@
             <button class="herobutton">Sign up</button>
           </div>
           <div class="herorightside">
-            <img
-              src="https://via.placeholder.com/800x600"
-              alt="Example Image"
-              class="heroimg"
-            />
+            <picture>
+              <source
+                media="(max-width: 906px)"
+                srcset="https://via.placeholder.com/1000x250"
+              />
+
+              <source
+                media="(max-width: 1200px)"
+                srcset="https://via.placeholder.com/500x600"
+              />
+
+              <img
+                src="https://via.placeholder.com/1200x600"
+                alt="Example Image"
+                class="heroimg"
+              />
+            </picture>
           </div>
         </div>
       </div>
